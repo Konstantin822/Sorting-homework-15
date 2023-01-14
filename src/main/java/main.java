@@ -9,15 +9,15 @@ public class main {
         System.out.println("Before");
         System.out.println(Arrays.toString(array));
 
-        int low = 0;
-        int high = array.length - 1;
+        int left = 0;
+        int right = array.length - 1;
 
-        QuickSort.quickSort(array, low, high);
+        QuickSort.quickSort(array, left, right);
         System.out.println("After");
         System.out.println(Arrays.toString(array));
 
         array = new int[]{10, 5, 8, 7, 1, 14, 12, 16, 9};
-        ShakeSort.shakeSort(array, low, high);
+        ShakeSort.shakeSort(array, left, right);
         System.out.println("ShakeSort");
         System.out.println(Arrays.toString(array));
 
